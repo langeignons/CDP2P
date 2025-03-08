@@ -3,24 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Test</title>
+    <title>index</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
-        p {
-            color: #666;
+        .flag {
+            width: 100%;
+            max-width: 600px;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .box img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .email {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur ma page de test !</h1>
-    <p>Si vous voyez cette page, cela signifie que l'hébergement fonctionne ! 🎉</p>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_R%C3%A9union.svg" alt="Drapeau de La Réunion" class="flag">
+        <div class="boxes">
+            <div class="box">
+                <img src="https://via.placeholder.com/100" alt="Profil 1">
+                <p class="email">email1@example.com</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/100" alt="Profil 2">
+                <p class="email">email2@example.com</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/100" alt="Profil 3">
+                <p class="email">email3@example.com</p>
+            </div>
+            <div class="box">
+                <img src="https://via.placeholder.com/100" alt="Profil 4">
+                <p class="email">email4@example.com</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
