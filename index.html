@@ -36,13 +36,19 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-        }
+            display: flex;
+            flex-direction: column; /* Force les éléments à s'empiler verticalement */
+            align-items: center; /* Centre horizontalement */
+}
+
         .box img {
             width: 100px;
             height: 100px;
-            object-fit: cover;
+            object-fit: contain; /* Garde toute l'image visible */
             border-radius: 10px;
-        }
+            background-color: white; /* Optionnel : ajoute une couleur de fond pour les espaces vides */
+}
+
         .email {
             margin-top: 10px;
             font-size: 14px;
@@ -52,27 +58,27 @@
 </head>
 <body>
     <div class="container">
-        <img src="LaReunion.png" alt="Drapeau de La Réunion" class="flag">
+        <img src="imgBurn.jpeg" alt="Drapeau de La Réunion" class="flag">
         <div class="boxes">
             <div class="box">
-                <p>machin</p>
+                <p>Karim</p>
                 <img src="Unknown.heic" alt="Profil 1">
-                <a href="mailto:exemple@example.com" class="email">email@example.com</a>
+                <a href="mailto:karimtatard@gmail.com" class="email">karimtatard@gmail.com</a>
             </div>
             <div class="box">
-                <p>machin</p>
+                <p>Henry</p>
                 <img src="Unknown-1.heic" alt="Profil 2">
-                <a href="mailto:exemple@example.com" class="email">email@example.com</a>
+                <a href="mailto:H.H.Delisle@gmail.com" class="email">H.H.Delisle@gmail.com</a>
             </div>
             <div class="box">
                 <p>adrien</p>
                 <img src="Unknown-2.heic" alt="Profil 3">
-                <a href="mailto:exemple@example.com" class="email">email@example.com</a>
+                <a href="mailto:adrienfrappier@me.com" class="email">adrienfrappier@me.com</a>
             </div>
             <div class="box">
-                <p>machin</p>
+                <p>Maël</p>
                 <img src="Unknown-3.heic" alt="Profil 4">
-                <a href="mailto:exemple@example.com" class="email">email@example.com</a>
+                <a href="mailto:maeltatard@gmail.com" class="email">maeltatard@gmail.com</a>
             </div>
              <div class="box">
                  <p>guilhem</p>
