@@ -19,9 +19,12 @@
             padding: 20px;
         }
         .flag {
-            width: 50%;
-            max-width: 300px;
+            width: auto; /* Ne redimensionne pas l'élément en fonction de son conteneur */
+            max-width: 300px; /* Limite la largeur maximale à 300px */
+            height: auto; /* Laisse l'élément ajuster sa hauteur automatiquement selon son contenu */
+            border-radius: 50%; /* Arrondir complètement les bords pour un effet circulaire */
         }
+
         .boxes {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -71,7 +74,7 @@
                 <a href="mailto:H.H.Delisle@gmail.com" class="email">H.H.Delisle@gmail.com</a>
             </div>
             <div class="box">
-                <p>Adrien</p>
+                <p>adrien</p>
                 <img src="Unknown-2.heic" alt="Profil 3">
                 <a href="mailto:adrienfrappier@me.com" class="email">adrienfrappier@me.com</a>
             </div>
@@ -81,7 +84,7 @@
                 <a href="mailto:maeltatard@gmail.com" class="email">maeltatard@gmail.com</a>
             </div>
              <div class="box">
-                 <p>Guilhem</p>
+                 <p>guilhem</p>
                 <img src="Unknown-4.heic" alt="Profil 4">
                 <a href="mailto:guilhemhart@gmail.com" class="email">guilhemhart@gmail.com</a>
             </div>
